@@ -1,0 +1,8 @@
+[Unit]
+Description= Copies the files to fileserver
+Documentation= man:systemd.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/pagerotest_trigger.sh
+

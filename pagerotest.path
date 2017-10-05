@@ -1,0 +1,10 @@
+[Unit]
+Description= Triggers the move pagero test files to fileserver
+Documentation= man:systemd.path
+
+[Path]
+PathModified=/var/log/secure
+
+[Install]
+WantedBy=multi-user.target
+

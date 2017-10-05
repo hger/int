@@ -1,0 +1,7 @@
+[Unit]
+Description=Checks for files to send of to ATEA
+After=syslog.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/python /usr/local/bin/atea_order.py

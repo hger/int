@@ -1,0 +1,9 @@
+[Unit]
+Description=Run pagero.service every 60 minutes
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=60min
+
+[Install]
+WantedBy=multi-user.target

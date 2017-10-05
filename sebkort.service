@@ -1,0 +1,12 @@
+[Unit]
+Description= Mails the incoming file to invoices
+Documentation= man:systemd.service
+
+[Service]
+Environment=MAIL=/var/spool/mail/sebkort
+Environment=HOME=/home/sebkort
+Environment=LOGNAME=sebkort
+User=sebkort
+Type=oneshot
+ExecStart=/usr/local/bin/sebkort.sh
+

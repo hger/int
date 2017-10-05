@@ -1,0 +1,10 @@
+[Unit]
+Description= Triggers the mail sebkort to invoices
+Documentation= man:systemd.path
+
+[Path]
+PathModified=/sftp/sebkort/home/
+
+[Install]
+WantedBy=multi-user.target
+

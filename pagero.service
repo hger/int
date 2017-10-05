@@ -1,0 +1,7 @@
+[Unit]
+Description=Checks for files and move to fileserver
+After=syslog.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/python /usr/local/bin/pagero.py
